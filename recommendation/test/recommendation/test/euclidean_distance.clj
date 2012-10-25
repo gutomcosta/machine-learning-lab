@@ -1,5 +1,5 @@
 (ns recommendation.test.euclidean_distance
-  (:use [recommendation.euclidean_distance] :reload)
+  (:use [recommendation.metrics.euclidean_distance] :reload)
   (:use [clojure.test]))
 
 (deftest should_be_possible_to_get_a_critic_value ;; FIXME: write

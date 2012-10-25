@@ -1,5 +1,5 @@
 (ns recommendation.test.pearson_correlation_score
-  (:use [recommendation.pearson_correlation_score] :reload)
+  (:use [recommendation.metrics.pearson_correlation_score] :reload)
   (:use [clojure.test]))
 
 

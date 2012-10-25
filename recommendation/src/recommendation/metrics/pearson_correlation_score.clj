@@ -1,4 +1,4 @@
-(ns recommendation.pearson_correlation_score
+(ns recommendation.metrics.pearson_correlation_score
 	(:use [critics.common_elements])
 	(:require [ clojure.contrib.math :as math]))
 
