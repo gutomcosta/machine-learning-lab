@@ -1,5 +1,5 @@
 (ns recommendation.test.top_matches
-  (:use [recommendation.metrics.euclidean_distance] :reload)
+  (:use [recommendation.metrics.pearson_correlation_score] :reload)
   (:use [recommendation.top_matches] :reload)
   (:use [clojure.test]))
 
@@ -11,8 +11,9 @@
               "Jack Mattews" {"Lady in the Water" 3.0 "Snakes on a Plane" 4.0 "The Night Listener" 3.0 "Superman Returns" 5.0  "You, Me and Dupree" 3.5}
               "Tody" {"Snakes on a Plane" 4.5 "You, Me and Dupree" 1.0 "Superman" 4.0}})
 
-(deftest should-be-possible-to-use-euclidean-distance
-	(let [matches (top-matches data "Tody" 3 euclidean-distance)]
-	 	(println matches)
-	 	)
-	)
+; (deftest should-be-possible-to-use-euclidean-distance
+; 	(let [
+;         pearson-correlation (top-matches data "Tody" 3 pearson-correlation-score)]
+;     (println pearson-correlation)
+; 	 	)
+; 	)

@@ -45,8 +45,8 @@
 
 (defn sum-of-squares
   [collection other-collection]
-  (let [squared-difference (calculate-difference-between-collection-values 
-                              collection other-collection)]
+  (let [squared-difference (filter (fn[num] (not (nil? num))) (calculate-difference-between-collection-values 
+                              collection other-collection))]
     (reduce + squared-difference)))
 
 (defn euclidean-distance 

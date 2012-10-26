@@ -33,7 +33,7 @@
 
 (defn pearson-correlation-score
 	[person1 person2 critics-of]
-	(let [similarities (common-items (get critics-of person1) (get critics-of person2))
+	(let [similarities (filter (fn[element] (not (nil? element))) (common-items (get critics-of person1) (get critics-of person2)))
 		    similarities_count (count similarities)
         sum-of-person1 (sum-of person1 critics-of)
         sum-of-person2 (sum-of person2 critics-of)
