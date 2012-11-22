@@ -6,7 +6,7 @@
     (for [[key value] collection]
       (if (contains? other-collection key)
         (exists-func key value)
-        (not-exists-func key value)))))
+        ))))
 
 
 
