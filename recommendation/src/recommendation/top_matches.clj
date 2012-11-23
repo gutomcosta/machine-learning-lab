@@ -1,9 +1,13 @@
 (ns recommendation.top_matches)
 
+(defrecord Rank [person value])
+
+
 (defn get-similarities
 	[data-of person1 person2 similarity-metric]
 		(if (not (= person1 person2)) 
-			{ :person person2 :value (similarity-metric person1 person2 data-of)} 
+			(Rank. person2 (similarity-metric person1 person2 data-of))
+			;{ :person person2 :value (similarity-metric person1 person2 data-of)} 
 			{}))
 
 (defn top-matches
