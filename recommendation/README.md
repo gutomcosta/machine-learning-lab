@@ -1,7 +1,7 @@
 # recommendation
 
-This project is about recommendation algorithms. Actually, this project is used for help me to learning about this type of  algorithms. You can found very random stuff here :).
-Most of the implementations founded here, are based on 3 important books: 
+This project is about recommendation algorithms. Actually, this project is used for me to learning about this type of  algorithms. You can found random stuff here :).
+Most of the implementations found here, are based on 3 important books: 
 
 * Artificial Intelligence - A Modern Approach
 * Machine Learning in Action
